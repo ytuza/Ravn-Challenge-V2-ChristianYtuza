@@ -1,3 +1,31 @@
+# RAVN Challenge V2
+
+# Summary
+Create a web or mobile app that allows you to browse the Star Wars GraphQL Api. The goal of this challenge is to demonstrate your ability to write clean software, communicate clearly, and follow the instructions.
+
+# Frameworks
+The main frameworks used are: ReactJS, Apollo and GraphQL
+
+ <br />
+ 
+ 
+![alt text](https://github.com/ytuza/Ravn-Challenge-V2-ChristianYtuza/blob/main/images/graphqlApollo.png?raw=true)
+
+# Functionality
+
+Through the API you can access the repository of the Star Wars characters, the queries are made 5 by 5, to request more characters from the server you have to slide the character window with the mouse wheel, in addition to doing Click on the arrow of the desired character, more data will open, such as eye color, hair color, year of birth, etc.
+
+# Screenshots
+
+![alt text](https://github.com/ytuza/Ravn-Challenge-V2-ChristianYtuza/blob/main/images/screen1.png?raw=true)
+![alt text](https://github.com/ytuza/Ravn-Challenge-V2-ChristianYtuza/blob/main/images/screen2.png?raw=true)
+![alt text](https://github.com/ytuza/Ravn-Challenge-V2-ChristianYtuza/blob/main/images/screen3.png?raw=true)
+
+# Deployment
+React indications are below, also for a preview the page is online thanks to github at the link:
+
+https://ytuza.github.io/Ravn-Challenge-V2-ChristianYtuza/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
