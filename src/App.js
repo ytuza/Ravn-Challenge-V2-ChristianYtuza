@@ -1,5 +1,5 @@
 import './App.css';
-
+import "./iconos";
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 
 import People from './components/People';
@@ -15,7 +15,7 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <div className="container">
-      <h1>Ravn Star Wars Registry</h1>
+      <div className = "headerRAVN" > Ravn Star Wars Registry</div>
       </div>
       <People/>
     </ApolloProvider>

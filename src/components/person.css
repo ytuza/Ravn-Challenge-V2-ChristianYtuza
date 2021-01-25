@@ -1,0 +1,44 @@
+@import url(../colors.css) all;
+
+.person{
+  width: auto;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  transform: translateX(0);
+}
+
+.name{
+  width: auto ;
+  color: var(--TextDark);
+  font-family: system-ui;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 20px;
+  display: flex;
+  align-items: left;
+  letter-spacing: 0.0125em;
+}
+
+.specie{
+  width: auto ;
+  color: var(--TextLight);
+  font-family: system-ui;
+  font-style: normal;
+
+  font-size: 14px;
+  height: 17px;
+  display: flex;
+  align-items: left;
+  letter-spacing: 0.0125em;
+
+}
+
+.arrow{
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 16px;
+  top: calc(50% - 24px/2 + 1.5px);
+
+}

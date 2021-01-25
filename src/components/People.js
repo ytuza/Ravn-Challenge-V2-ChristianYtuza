@@ -1,12 +1,17 @@
+import './people.css';
+
 import React, {Component} from 'react'
 
 import { useQuery, gql } from '@apollo/client';
 import {Person} from "./Person";
 import {filter} from "graphql-anywhere";
+import {Waypoint} from 'react-waypoint';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 
 const PEOPLE_QUERY = gql`
   query peopleQuery( $after : String){
-    allPeople(first: 30 after: $after){
+    allPeople(first: 5 after: $after){
       totalCount
       ...PersonFragment
       pageInfo{
@@ -25,16 +30,19 @@ function People() {
     variables: { after: null }
   });
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <div className = "Loading">
+    <FontAwesomeIcon icon= "spinner" spin = {true}/> <div className = "loadtext">Loading</div>
+  </div>;
   if (error){
     console.log(error);
-    return <p>Error :(</p>;
+    return <div className = "failed">Failed to Load Data</div>;
   }
   //console.log(data);
   return (
-    <div>
+    <div className = "listPeople">
       <Person allPeople = {filter(Person.fragments.PeopleConnection, data.allPeople)}/>
-      <button onClick={()=>{
+      <Waypoint bottomOffset  = "5%" onEnter={()=>{
+        console.log("paltas2");
         if(data.allPeople.pageInfo.hasNextPage){
           const {endCursor} = data.allPeople.pageInfo;
           fetchMore({
@@ -50,10 +58,12 @@ function People() {
           console.log("Ya no hay mas");
         }
 
-      }
-      }>
-        more
-      </button>
+      }}>
+        <div className = "Loading">
+           <FontAwesomeIcon className = "mx-3" icon= "spinner" spin = {true}/><div className = "loadtext">Loading</div>
+        </div>
+      </Waypoint>
+
     </div>
   )
 }
