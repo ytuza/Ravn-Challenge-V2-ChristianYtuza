@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Ravn-Challenge-V2-ChristianYtuza/static/css/main.40f1a527.chunk.css",
+    "main.js": "/Ravn-Challenge-V2-ChristianYtuza/static/js/main.765627b3.chunk.js",
+    "main.js.map": "/Ravn-Challenge-V2-ChristianYtuza/static/js/main.765627b3.chunk.js.map",
+    "runtime-main.js": "/Ravn-Challenge-V2-ChristianYtuza/static/js/runtime-main.62adaec0.js",
+    "runtime-main.js.map": "/Ravn-Challenge-V2-ChristianYtuza/static/js/runtime-main.62adaec0.js.map",
+    "static/js/2.4b0dc5b0.chunk.js": "/Ravn-Challenge-V2-ChristianYtuza/static/js/2.4b0dc5b0.chunk.js",
+    "static/js/2.4b0dc5b0.chunk.js.map": "/Ravn-Challenge-V2-ChristianYtuza/static/js/2.4b0dc5b0.chunk.js.map",
+    "static/js/3.793f5a48.chunk.js": "/Ravn-Challenge-V2-ChristianYtuza/static/js/3.793f5a48.chunk.js",
+    "static/js/3.793f5a48.chunk.js.map": "/Ravn-Challenge-V2-ChristianYtuza/static/js/3.793f5a48.chunk.js.map",
+    "index.html": "/Ravn-Challenge-V2-ChristianYtuza/index.html",
+    "static/css/main.40f1a527.chunk.css.map": "/Ravn-Challenge-V2-ChristianYtuza/static/css/main.40f1a527.chunk.css.map",
+    "static/js/2.4b0dc5b0.chunk.js.LICENSE.txt": "/Ravn-Challenge-V2-ChristianYtuza/static/js/2.4b0dc5b0.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.62adaec0.js",
+    "static/js/2.4b0dc5b0.chunk.js",
+    "static/css/main.40f1a527.chunk.css",
+    "static/js/main.765627b3.chunk.js"
+  ]
+}
