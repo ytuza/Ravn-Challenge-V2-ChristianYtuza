@@ -1,7 +1,10 @@
-import React from 'react';
-import './person.css';
+import React , {useState} from 'react';
+
 import { useQuery, gql } from '@apollo/client';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import './person.css';
+
+
 
 const PERSON_FRAGMENT = gql`
   fragment PersonFragment on PeopleConnection {
@@ -9,7 +12,20 @@ const PERSON_FRAGMENT = gql`
       node{
         id
         name
-        gender
+        eyeColor
+        hairColor
+        skinColor
+        birthYear
+
+        vehicleConnection{
+          edges{
+            node{
+              id
+              name
+            }
+          }
+        }
+
         species {
           name
         }
@@ -21,6 +37,7 @@ const PERSON_FRAGMENT = gql`
   }
 `;
 
+
 function Specie({Person}){
   const isHuman = Person.node.species;
 
@@ -31,7 +48,8 @@ function Specie({Person}){
   }
 }
 
-function Person({allPeople}){
+
+function Person({func, allPeople}){
 
   return (
     <div >
@@ -39,8 +57,13 @@ function Person({allPeople}){
          <div className = "person" key = {Person.node.id}  >
             <div className = "name">{Person.node.name}</div>
             <Specie Person = {Person}/>
-            <FontAwesomeIcon icon="chevron-right" className= "arrow"/>
+            <FontAwesomeIcon icon="chevron-right" className= "arrow button" onClick={()=>{
+              func(Person);
+            }
+            }/>
+
          </div>
+
        ))}
 
     </div>

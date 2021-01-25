@@ -50,9 +50,87 @@
 
 
 .listPeople{
+  float:left;
   width: 350px;
   margin: 0px;
   padding: 0px;
   border-right: 1px solid rgba(0, 0, 0, 0.1);
 
+}
+
+.bottonbar{
+  float:left;
+  width: 100%;
+}
+
+.properties{
+    position: absolute;
+    display : grid;
+    width: calc(100% - 350px);
+
+
+    letter-spacing: 0.0125em;
+
+    margin-left: 450px;
+
+
+
+    color: var(--TextDark);
+
+}
+
+.tituloPro{
+
+  font-family: system-ui;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 20px;
+
+  padding-left: 33px;
+  padding-top: 32px;
+  padding-bottom: 8px;
+  justify-content: left;
+
+
+}
+
+.character{
+
+
+  font-family: system-ui;
+  font-style: normal;
+  column-rule-style: solid;
+  margin: 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-right: 15%;
+}
+
+.datapro{
+  font-family: system-ui;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 17px;
+  height: 17px;
+  float:left;
+
+  padding-left: 33px;
+  padding-right:  100px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  color: var(--TextLight);
+}
+
+.dataproV{
+  font-family: system-ui;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 17px;
+  height: 17px;
+  float: left;
+  right: 33px;
+  padding-right: 33px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  color: var(--TextDark);
 }
